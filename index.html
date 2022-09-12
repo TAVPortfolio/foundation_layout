@@ -17,6 +17,8 @@
 <body>
   <div class="page">
     <div class="top-section">
+
+      <!-- .header -->
       <header class="header">
         <div class="logo">
           <img class="logo__image" src="img/logo-header.png" alt="image: Foundation logo">
@@ -31,15 +33,104 @@
           <a href="#" class="navigation__link navigation__link--selected">Home</a></li>
           <a href="#" class="navigation__link">Stories</a></li>
           <a href="#" class="navigation__link">Library<i class="navigation__arrow"></i></a></li>
-
         </nav>
-        <button class="button button-trial">Get Started</button>
+        <button class="button button-trial button-trial--header">Get Started</button>
+        <button class="button header-menu__button"><span class="header-menu__button-icon"></span></button>
       </header>
-      <section></section>
+      <!-- /.header -->
+
+      <!-- .headline -->
+      <section class="headline">
+        <div class="headline-content">
+          <h1 class="headline__title">Build stunning websites & apps.</h1>
+          <p class="headline__description">Create live segments and target the right people for messages based on their
+            behaviors.</p>
+          <div class="button-headline">
+            <button class="button button-trial button__action">Get Started</button>
+            <button class="button button__more">Get Started</button>
+          </div>
+          <!-- /.button-headline -->
+        </div>
+        <!-- /.headline-content -->
+        <img class="headline__banner" src="img/headline.png" alt="Headline banner">
+      </section>
+      <!-- /.headline -->
+
     </div>
     <!-- /.top-section -->
 
-    <!--***** Footer START *****-->
+    <!-- .about -->
+    <section class="about">
+      <article class="article">
+        <h4 class="article__title">What is it about?</h4>
+        <p class="article__text">Building a website for a startup that looks amazing is not a rocket science anymore.
+        </p>
+      </article>
+      <article class="article">
+        <h4 class="article__title">Who is it for?</h4>
+        <p class="article__text">Startups, small companies and teams, entrepreneurs and web developers.</p>
+      </article>
+    </section>
+    <!-- /.about -->
+
+    <!-- .customers -->
+    <section class="customers">
+      <img class="customers__logo" src="img/customers/logo-nyt.png" alt="The New York times">
+      <img class="customers__logo" src="img/customers/logo-forbes.png" alt="Forbes">
+      <img class="customers__logo" src="img/customers/logo-apple.png" alt="Apple">
+      <img class="customers__logo" src="img/customers/logo-mashable.png" alt="Mashable">
+      <img class="customers__logo" src="img/customers/logo-wsj.png" alt="WSJ">
+      <img class="customers__logo" src="img/customers/logo-google.png" alt="Google">
+    </section>
+    <!-- /.customers -->
+
+    <!-- Features -->
+    <section class="features">
+      <img class="features__image-left" src="img/features/head.png" alt="Image head">
+      <div class="features-content">
+        <div class="features-column">
+          <h4 class="features__suptitle">Features</h4>
+          <h2 class="features__title">Easily find leads and customers </h2>
+          <p class="features__description">Send one-off and automated email, push, and in-app messages to people. Create
+            better stories.</p>
+          <div class="features-block features-block--active">
+            <div class="features__head-block">
+              <img class="features-block__image" src="img/features/Icon-compas.png" alt="Icon compas">
+              <h5 class="features-block__title features-block__title--active">Acquire new customers</h5>
+            </div>
+            <!-- /.features__head-block -->
+            <p class="features-block__text">Everything you need to start building – including open-source code,
+              documentation.</p>
+            <div class="features-block__line features-block__line--active"></div>
+          </div>
+          <!-- /.features-block features-block--active -->
+          <div class="features-block">
+            <div class="features__head-block">
+              <img class="features-block__image" src="img/features/Icon-bullding.png" alt="Icon building">
+              <h5 class="features-block__title">Engage users</h5>
+            </div>
+            <!-- /.features__head-block -->
+            <div class="features-block__line"></div>
+          </div>
+          <!-- /.features-block -->
+          <div class="features-block">
+            <div class="features__head-block">
+              <img class="features-block__image" src="img/features/Icon-bucket.png" alt="Icon bucket">
+              <h5 class="features-block__title">Develop across platforms</h5>
+            </div>
+            <!-- /.features__head-block -->
+            <div class="features-block__line"></div>
+          </div>
+          <!-- /.features-block -->
+        </div>
+        <!-- /.features-column -->
+      </div>
+      <!-- /.features-content -->
+      <img class="features__image-right" src="img/features/features-image.png" alt="Image layout">
+    </section>
+    <!-- /.features -->
+
+    <!-- .footer -->
     <footer class="footer">
       <div class="footer-nav">
         <div class="about-company">
@@ -63,7 +154,7 @@
         <!-- /.about-company -->
         <div class="additional-nav">
           <div class="additional-nav__column">
-            <h3 class="additional-nav__title">Product</h3>
+            <h4 class="additional-nav__title">Product</h4>
             <ul class="additional-nav__list nav-link">
               <li class="nav-link__item-"><a class="nav-link__item-link" href="#">Acquire Users</a></li>
               <li class="nav-link__item"><a class="nav-link__item-link" href="#">Content Marketing</a></li>
@@ -74,7 +165,7 @@
           </div>
           <!-- /.additional-nav__column -->
           <div class="additional-nav__column">
-            <h3 class="additional-nav__title">Company</h3>
+            <h4 class="additional-nav__title">Company</h4>
             <ul class="additional-nav__list nav-link">
               <li class="nav-link__item"><a class="nav-link__item-link" href="#">About Foundation</a></li>
               <li class="nav-link__item"><a class="nav-link__item-link" href="#">Brand Guidelines</a></li>
@@ -107,7 +198,7 @@
       </div>
       <!-- /.footer-links -->
     </footer>
-    <!--***** Footer END *****-->
+    <!-- /.footer -->
   </div>
   <!-- /.page -->
 </body>
