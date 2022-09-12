@@ -1,0 +1,82 @@
+.features {
+  display: flex;
+  position: relative;
+  &-content {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+  }
+
+  &__suptitle {
+    font-weight: 700;
+    font-size: 22px;
+    color: $primary-section__name-color;
+    line-height: 1.55;
+  }
+  &__title {
+    width: 462px;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+  }
+  &__description {
+    width: 461px;
+    margin: 30px 0 42px;
+    font-size: 24px;
+    line-height: 1.42;
+  }
+  &-block {
+    max-width: 461px;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      margin-left: 15px;
+      font-size: 22px;
+      line-height: 1.18;
+      font-weight: 400;
+      &--active {
+        color: $secondary-color;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 1.44;
+    }
+    &__line {
+      height: 1px;
+      border-bottom: 1px solid $primary-text-color;
+      opacity: 0.15;
+      width: 457px;
+      margin-top: 22px;
+      margin-bottom: 21px;
+      &--active {
+        opacity: 1;
+        border-bottom: 3px solid $secondary-color;
+        margin: 17px 0 20px;
+      }
+    }
+  }
+  &__head {
+    &-block {
+      align-items: center;
+      margin-bottom: 8px;
+      display: flex;
+    }
+  }
+  &__image {
+    &-left {
+      top: 258px;
+      position: absolute;
+      height: 167px;
+    }
+    &-right {
+      position: absolute;
+      right: 0;
+      height: 597px;
+    }
+  }
+}
+
+// features-block

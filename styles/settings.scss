@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: $primary-text-color;
+}
+
+.page {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 48px;
+  font-weight: 700;
+  &-trial {
+    border-radius: 2px;
+    background-color: $secondary-color;
+    min-width: 160px;
+    color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    &--header {
+      display: none;
+    }
+  }
+}
+
+@include for-desktop {
+  .button {
+    &-trial {
+      &--header {
+        display: block;
+      }
+    }
+  }
+}

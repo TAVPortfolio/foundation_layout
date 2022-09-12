@@ -1,0 +1,97 @@
+@import 'variables.scss';
+
+.headline {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  &-content {
+    margin: 35px 15px 33px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -0.3125px;
+    line-height: 1;
+    overflow: hidden;
+  }
+  &__description {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 1.42;
+    overflow: hidden;
+  }
+  &__banner {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+}
+
+.button {
+  &-headline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  &__action {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  &__more {
+    width: 100%;
+    background-color: $learnMore-button-color;
+    font-size: 18px;
+    line-height: 0.72;
+    color: $secondary-color;
+  }
+}
+
+@include for-desktop {
+  .headline {
+    position: relative;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 84px;
+    padding-bottom: 77px;
+    &-content {
+      position: absolute;
+      z-index: 1;
+      margin: 0;
+    }
+    &__title {
+      font-size: 80px;
+      letter-spacing: -0.5px;
+      line-height: 0.98;
+      width: 754px;
+      height: 165px;
+    }
+    &__description {
+      margin-top: 34px;
+      overflow: hidden;
+      width: 456px;
+      height: 102px;
+    }
+    &__banner {
+      width: auto;
+      position: relative;
+      right: -107px;
+      margin-left: auto;
+      top: 7px;
+    }
+  }
+
+  .button {
+    &-headline {
+      flex-direction: row;
+      margin-top: 58px;
+    }
+    &__action {
+      width: 160px;
+      margin: 0;
+      margin-right: 10px;
+    }
+    &__more {
+      width: 158px;
+    }
+  }
+}
