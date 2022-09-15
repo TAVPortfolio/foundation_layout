@@ -1,0 +1,118 @@
+// mobile version
+
+.order {
+  padding: 50px 15px;
+  background-color: $order-section-color;
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__img {
+    width: 200px;
+  }
+  &-content {
+    &__text {
+      &-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: -0.25px;
+        margin-top: 40px;
+      }
+      &-description {
+        font-size: 22px;
+        line-height: 1.45;
+        margin-top: 18px;
+        min-height: 167px;
+      }
+    }
+  }
+  &-form {
+    &__input {
+      margin-top: 40px;
+      background: #ffffff;
+      border: 1px solid rgba(43, 41, 45, 0.2);
+      border-radius: 2px;
+      outline: none;
+      height: 48px;
+      width: 100%;
+      padding: 0 15px;
+    }
+    &__text {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.57;
+      color: #2b292d99;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 1.57;
+      text-decoration: underline;
+      color: #3142c6;
+    }
+  }
+  &__button {
+    margin-top: 12px;
+    min-width: 100%;
+  }
+}
+
+// desktop version
+@include for-desktop {
+  .order {
+    display: flex;
+    justify-content: center;
+    &-container {
+      max-width: 948px;
+      justify-content: space-between;
+      flex-direction: row;
+      flex: 1;
+    }
+    &__img {
+      width: 270px;
+    }
+    &-content {
+      max-width: 557px;
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-title {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 1;
+          text-align: center;
+          letter-spacing: -0.25px;
+          margin-top: 40px;
+        }
+        &-description {
+          font-size: 22px;
+          line-height: 1.45;
+          margin-top: 18px;
+          max-height: 64px;
+          min-height: 0;
+        }
+      }
+    }
+    &-email {
+      display: flex;
+      flex-direction: column;
+    }
+    &-form {
+      display: flex;
+      margin-top: 26px;
+      &__input {
+        margin: 0;
+        margin-right: 10px;
+        height: 48px;
+        width: 385px;
+      }
+    }
+    &__button {
+      margin: 0;
+      min-width: 160px;
+    }
+  }
+}
