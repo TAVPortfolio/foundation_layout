@@ -16,6 +16,8 @@
 
 <body>
   <div class="page">
+
+    <!-- .top-section -->
     <div class="top-section">
 
       <!-- .header -->
@@ -24,7 +26,7 @@
           <img class="logo__image" src="../img/logo-header.png" alt="image: Foundation logo">
           <div class="logo__text">
             <span class="logo__name">Foundation</span>
-            <span class="logo__description">Startup landing template</span>
+            <span class="logo__description logo__description-header">Startup landing template</span>
           </div>
           <!-- /.logo-text -->
         </div>
@@ -34,7 +36,7 @@
           <a href="#" class="navigation__link">Stories</a></li>
           <a href="#" class="navigation__link">Library<i class="navigation__arrow"></i></a></li>
         </nav>
-        <button class="button button-trial button-trial--header">Get Started</button>
+        <button class="button button__trial button__trial--header">Get Started</button>
         <button class="button header-menu__button"><span class="header-menu__button-icon"></span></button>
       </header>
       <!-- /.header -->
@@ -46,8 +48,8 @@
           <p class="headline__description">Create live segments and target the right people for messages based on their
             behaviors.</p>
           <div class="button-headline">
-            <button class="button button-trial button__action">Get Started</button>
-            <button class="button button__more">Get Started</button>
+            <button class="button button__trial button__action">Get Started</button>
+            <button class="button button__more">Learn More</button>
           </div>
           <!-- /.button-headline -->
         </div>
@@ -75,16 +77,74 @@
 
     <!-- .customers -->
     <section class="customers">
-      <img class="customers__logo" src="img/customers/logo-nyt.png" alt="The New York times">
-      <img class="customers__logo" src="img/customers/logo-forbes.png" alt="Forbes">
-      <img class="customers__logo" src="img/customers/logo-apple.png" alt="Apple">
-      <img class="customers__logo" src="img/customers/logo-mashable.png" alt="Mashable">
-      <img class="customers__logo" src="img/customers/logo-wsj.png" alt="WSJ">
-      <img class="customers__logo" src="img/customers/logo-google.png" alt="Google">
+      <div class="customers__row">
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-nyt.png" alt="The New York times">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-forbes.png" alt="Forbes">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-apple.png" alt="Apple">
+        </div>
+      </div>
+      <!-- /.customers__row -->
+      <div class="customers__row">
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-mashable.png" alt="Mashable">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-wsj.png" alt="WSJ">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="img/customers/logo-google.png" alt="Google">
+        </div>
+      </div>
+      <!-- /.customers__row -->
+
+
     </section>
     <!-- /.customers -->
 
-    <!-- Features -->
+    <!-- Features-mobile(.tips) -->
+    <section class="tips">
+      <div class="tip">
+        <span class="tip__suptitle">Acquire Customers</span>
+        <h4 class="tip__title">Easily find leads and customers</h4>
+        <p class="tip__text">Send one-off and automated email, push, and in-app messages to people. Create better
+          stories.</p>
+        <figure>
+          <img src="img/tip-asquire-customer.png" alt="Asquire customer" class="tip__image">
+          <figcaption class="tip__image-description">A better way to acquire new users</figcaption>
+        </figure>
+      </div>
+      <!-- /.tip -->
+      <div class="tip">
+        <span class="tip__suptitle">Engage Users</span>
+        <h4 class="tips__title">Engage with your audience</h4>
+        <p class="tip__text">Send one-off and automated email, push, and in-app messages to people. Create better
+          stories.</p>
+        <figure>
+          <img src="img/tip-engage-user.png" alt="Engage user" class="tip__image">
+          <figcaption class="tip__image-description">Knowledge base and smart self-service</figcaption>
+        </figure>
+      </div>
+      <!-- /.tip -->
+      <div class="tip">
+        <span class="tip__suptitle">Support</span>
+        <h4 class="tip__title">The best customer experiences</h4>
+        <p class="tip__text">A beautifully simple system for tracking, prioritizing, and solving customer support
+          tickets.</p>
+        <figure>
+          <img src="img/tip-support.png" alt="Support" class="tip__image">
+          <figcaption class="tip__image-description">Live chat and messaging</figcaption>
+        </figure>
+      </div>
+      <!-- /.tip -->
+    </section>
+    <!-- /.tips -->
+
+    <!-- Features-desktop -->
     <section class="features">
       <img class="features__image-left" src="img/features/head.png" alt="Image head">
       <div class="features-content">
@@ -128,15 +188,85 @@
       <!-- /.features-content -->
       <img class="features__image-right" src="img/features/features-image.png" alt="Image layout">
     </section>
-    <!-- /.features -->
+    <!-- /.features-desktop -->
+
+
+    <!-- .audience -->
+    <section class="audience">
+      <div class="audience-content">
+        <h4 class="audience-content__suptitle">Engage Visitors</h4>
+        <h2 class="audience-content__title">Understand your audience</h2>
+        <p class="audience-content__description">Early stage company? Eligible applicants get all of our products for
+          just $49 a month.
+        </p>
+        <div class="button-headline button__audience">
+          <button class="button button__trial button__action">Get Started</button>
+          <button class="button button__more">Learn More</button>
+        </div>
+        <!-- /.button-headline -->
+      </div>
+      <!-- /.audience-content -->
+      <div class="audience-categories">
+        <div class="categories-item">
+          <img class="categories-item__img" src="img/audience-developers.png" alt="Audience developers">
+          <h4 class="categories-item__name">Developers</h4>
+        </div>
+        <!-- /.categories-item -->
+        <div class="categories-item">
+          <img class="categories-item__img" src="img/audience-entertainment.png" alt="Audience entertainment">
+          <h4 class="categories-item__name">Entertainment</h4>
+        </div>
+        <!-- /.categories-item -->
+        <div class="categories-item">
+          <img class="categories-item__img" src="img/audience-athletes.png" alt="Audience athletes">
+          <h4 class="categories-item__name">Athletes</h4>
+        </div>
+        <!-- /.categories-item -->
+        <div class="categories-item">
+          <img class="categories-item__img" src="img/audience-creators.png" alt="Audience creators">
+          <h4 class="categories-item__name">Creators</h4>
+        </div>
+        <!-- /.categories-item -->
+      </div>
+      <!-- /.audience-categories -->
+    </section>
+    <!-- /.audience -->
+
+    <!-- .order -->
+    <section class="order">
+      <div class="order-container">
+        <img src="img/order-illustration.png" alt="Order illustration" class="order__img">
+        <div class="order-content">
+          <div class="order-content__text">
+            <h2 class="order-content__text-title">Start your free trial.</h2>
+            <p class="order-content__text-description">Get notified about company updates, news and blog posts. We
+              hate
+              spam.</p>
+          </div>
+          <!-- /.order-content__text -->
+          <div class="order-email">
+            <form class="order-form" action="">
+              <input class="order-form__input" class type="email" placeholder="Enter your email">
+              <button class="button button__trial order__button" type="submit">Get Started</button>
+            </form>
+            <p class="order-form__text">Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#"
+                class="order-form__link">Terms of Use.</a></p>
+          </div>
+          <!-- /.order-content__input -->
+        </div>
+        <!-- /.order-content -->
+      </div>
+      <!-- /.order-container -->
+    </section>
+    <!-- /.order -->
 
     <!-- .footer -->
     <footer class="footer">
       <div class="footer-nav">
         <div class="about-company">
-          <div class="logo">
-            <img class="logo__image" src="img/logo-footer.png" alt="image: Foundation logo">
-            <div class="logo__text">
+          <div class="logo footer__logo">
+            <img class="logo__image footer__logo-image" src="img/logo-footer.png" alt="image: Foundation logo">
+            <div class="logo__text footer__logo-text">
               <span class="logo__name">Foundation</span>
               <span class="logo__description">Startup landing template</span>
             </div>
@@ -152,6 +282,8 @@
           <!-- /.downloads -->
         </div>
         <!-- /.about-company -->
+        <div class="footer__line footer__line-up"></div>
+        <!-- /.footer__line -->
         <div class="additional-nav">
           <div class="additional-nav__column">
             <h4 class="additional-nav__title">Product</h4>
@@ -178,7 +310,7 @@
         <!-- /.additional-nav -->
       </div>
       <!-- /.useful-link -->
-      <div class="footer__line"></div>
+      <div class="footer__line footer__line-down"></div>
       <!-- /.footer__line -->
       <div class="footer-links">
         <nav class="terms">
