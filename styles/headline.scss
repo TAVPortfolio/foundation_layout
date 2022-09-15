@@ -1,5 +1,4 @@
-@import 'variables.scss';
-
+// mobile version
 .headline {
   margin: auto;
   display: flex;
@@ -46,6 +45,7 @@
   }
 }
 
+// desktop version
 @include for-desktop {
   .headline {
     position: relative;

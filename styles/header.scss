@@ -1,5 +1,3 @@
-@import 'variables.scss';
-
 // mobile version
 .top-section {
   background-color: $header-section-color;
@@ -42,7 +40,9 @@
     line-height: 1.25;
   }
   &__description {
-    display: none;
+    &-header {
+      display: none;
+    }
   }
 }
 .navigation {

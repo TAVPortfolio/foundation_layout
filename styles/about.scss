@@ -1,16 +1,19 @@
+// mobile version
 .about {
-  padding: 77px 130px 76px;
-  max-width: 1400px;
+  padding: 46px 15px;
   width: 100%;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: $about-section-color;
 }
 
 .article {
-  width: 555px;
+  margin-bottom: 20px;
   overflow: hidden;
+  width: 100%;
+  &:last-child {
+    margin: 0;
+  }
   &__title {
     font-weight: 700;
     font-size: 22px;
@@ -20,5 +23,21 @@
     margin-top: 6px;
     font-size: 22px;
     line-height: 1.45;
+  }
+}
+
+// desktop version
+@include for-desktop {
+  .about {
+    padding: 77px 130px 76px;
+    max-width: 1400px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article {
+    margin: 0;
+    width: 555px;
   }
 }

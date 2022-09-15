@@ -1,54 +1,75 @@
+// mobile version
+
 .footer {
   margin-top: auto;
   display: flex;
   margin-bottom: 0;
   flex-direction: column;
 
-  &-nav {
-    margin: auto;
-    width: 1138px;
+  &__logo {
     display: flex;
-    height: 338px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &-image {
+      width: 60px;
+      height: 60px;
+      margin-right: 0;
+    }
+    &-text {
+      margin-top: 20px;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
   }
 
   &__description {
-    font-size: 18px;
-    max-width: 360px;
-    line-height: 1.44;
-    opacity: 0.6;
-    overflow: hidden;
-    margin: 25px 0;
+    display: none;
   }
 
   &__line {
     border-top: 1px solid $primary-text-color;
     width: 100%;
     opacity: 0.1;
+    &-up {
+      margin-top: 40px;
+      display: block;
+    }
+    &-down {
+      display: none;
+    }
   }
 
   &-links {
-    margin: auto;
-    align-items: center;
-    width: 1138px;
+    margin-top: 8px;
+    align-items: flex-start;
     display: flex;
-    height: 50px;
+    flex-direction: column;
+    padding: 22px 15px;
   }
 }
 
 .about-company {
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .downloads {
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
   &__link {
     margin-right: 10px;
   }
 }
 
 .additional-nav {
-  margin-top: 60px;
-  margin-left: 128px;
   display: flex;
+  padding: 0 15px;
+  flex-direction: column;
   &__title {
     line-height: 1.27;
     font-weight: 700;
@@ -57,10 +78,10 @@
   }
 
   &__column {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    margin-right: 29px;
     &:last-child {
       margin-right: 0;
     }
@@ -68,7 +89,6 @@
 }
 
 .nav-link {
-  width: 265px;
   line-height: 1.67;
   opacity: 0.6;
 }
@@ -83,8 +103,109 @@
 }
 
 .social-links {
-  margin-left: auto;
+  margin-top: 31px;
   &__items {
     margin-left: 20px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+
+// desktop version
+@include for-desktop {
+  .footer {
+    margin-top: auto;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+
+    &__logo {
+      justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      text-align: start;
+      &-image {
+        margin-right: 15px;
+      }
+      &-text {
+        margin: 0;
+      }
+    }
+
+    &-nav {
+      margin: auto;
+      width: 1138px;
+      display: flex;
+      height: 338px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    &__description {
+      display: block;
+      font-size: 18px;
+      max-width: 360px;
+      line-height: 1.44;
+      opacity: 0.6;
+      overflow: hidden;
+      margin: 25px 0;
+    }
+
+    &__line {
+      &-up {
+        display: none;
+      }
+      &-down {
+        display: block;
+      }
+    }
+
+    &-links {
+      margin: auto;
+      align-items: center;
+      width: 1138px;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+    }
+  }
+
+  .about-company {
+    margin-top: 43px;
+  }
+
+  .downloads {
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .additional-nav {
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 128px;
+    display: flex;
+    flex-direction: row;
+    &__column {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .nav-link {
+    width: 265px;
+  }
+
+  .social-links {
+    margin: 0;
+    margin-left: auto;
+    &__items {
+      margin-left: 20px;
+    }
   }
 }

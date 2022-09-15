@@ -21,6 +21,11 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -60,7 +65,7 @@ ul {
   outline: none;
   height: 48px;
   font-weight: 700;
-  &-trial {
+  &__trial {
     border-radius: 2px;
     background-color: $secondary-color;
     min-width: 160px;
@@ -73,9 +78,15 @@ ul {
   }
 }
 
+@mixin for-desktop {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+
 @include for-desktop {
   .button {
-    &-trial {
+    &__trial {
       &--header {
         display: block;
       }
