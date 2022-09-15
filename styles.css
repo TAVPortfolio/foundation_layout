@@ -238,6 +238,7 @@ ul {
     padding-bottom: 77px;
   }
   .headline-content {
+    padding: 0;
     position: absolute;
     z-index: 1;
     margin: 0;
