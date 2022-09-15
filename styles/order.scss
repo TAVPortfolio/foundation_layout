@@ -40,12 +40,12 @@
       width: 100%;
       padding: 0 15px;
     }
-    &__text {
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.57;
-      color: #2b292d99;
-    }
+  }
+  &-description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #2b292d99;
     &__link {
       font-size: 14px;
       line-height: 1.57;
@@ -53,9 +53,12 @@
       color: #3142c6;
     }
   }
-  &__button {
-    margin-top: 12px;
-    min-width: 100%;
+
+  .trial {
+    &--order {
+      margin-top: 12px;
+      min-width: 100%;
+    }
   }
 }
 
@@ -112,9 +115,11 @@
         width: 385px;
       }
     }
-    &__button {
-      margin: 0;
-      min-width: 160px;
+    .trial {
+      &--order {
+        margin: 0;
+        min-width: 160px;
+      }
     }
   }
 }

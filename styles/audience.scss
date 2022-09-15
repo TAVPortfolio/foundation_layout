@@ -62,9 +62,15 @@
     text-align: center;
   }
 }
-
-.button__audience {
-  justify-content: center;
+.button-container {
+  &--audience {
+    justify-content: center;
+  }
+}
+.trial {
+  &--audience {
+    margin-bottom: 12px;
+  }
 }
 
 // desktop version
@@ -106,8 +112,16 @@
       margin-right: 0;
     }
   }
-  .button__audience {
-    margin-top: 34px;
-    justify-content: center;
+  .button-container {
+    &--audience {
+      margin-top: 34px;
+      justify-content: center;
+    }
+  }
+  .trial {
+    &--audience {
+      margin: 0;
+      margin-right: 10px;
+    }
   }
 }

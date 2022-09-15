@@ -26,23 +26,29 @@
 }
 
 .button {
-  &-headline {
+  &-container {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
   }
-  &__action {
+}
+.trial {
+  &--headline {
     width: 100%;
     margin-right: 0;
     margin-bottom: 15px;
   }
-  &__more {
-    width: 100%;
-    background-color: $learnMore-button-color;
-    font-size: 18px;
-    line-height: 0.72;
-    color: $secondary-color;
-  }
+}
+.learn-more {
+  height: 48px;
+  width: 100%;
+  background-color: $learnMore-button-color;
+  font-size: 18px;
+  line-height: 0.72;
+  color: $secondary-color;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 // desktop version
@@ -82,17 +88,20 @@
   }
 
   .button {
-    &-headline {
+    &-container {
+      height: 48px;
       flex-direction: row;
       margin-top: 58px;
     }
-    &__action {
+  }
+  .trial {
+    &--headline {
       width: 160px;
       margin: 0;
       margin-right: 10px;
     }
-    &__more {
-      width: 158px;
-    }
+  }
+  .learn-more {
+    width: 158px;
   }
 }

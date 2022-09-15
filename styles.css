@@ -54,7 +54,7 @@ ul {
   padding: 0;
 }
 
-.button {
+button {
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -63,25 +63,18 @@ ul {
   cursor: pointer;
   border: none;
   outline: none;
-  height: 48px;
   font-weight: 700;
 }
-.button__trial {
+
+.trial {
+  height: 48px;
   border-radius: 2px;
   background-color: #3040c4;
   min-width: 160px;
   color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
-.button__trial--header {
-  display: none;
-}
 
-@media screen and (min-width: 1400px) {
-  .button__trial--header {
-    display: block;
-  }
-}
 .top-section {
   background-color: #f3c6bd;
   padding: 0;
@@ -94,13 +87,13 @@ ul {
   display: flex;
   padding-left: 15px;
 }
-.header-menu__button {
+.header .hamburger {
   margin-left: auto;
   width: 58px;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
-.header-menu__button-icon {
+.header .hamburger-icon {
   display: inline-block;
   width: 18px;
   height: 13px;
@@ -130,6 +123,10 @@ ul {
   display: none;
 }
 
+.trial--header {
+  display: none;
+}
+
 @media screen and (min-width: 1400px) {
   .top-section {
     padding-top: 39px;
@@ -140,7 +137,7 @@ ul {
     height: 62px;
     padding: 0;
   }
-  .header-menu__button {
+  .header .hamburger {
     display: none;
   }
   .header .logo {
@@ -184,6 +181,9 @@ ul {
     margin-left: 11px;
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   }
+  .trial--header {
+    display: block;
+  }
 }
 .headline {
   margin: auto;
@@ -211,22 +211,27 @@ ul {
   margin-bottom: 36px;
 }
 
-.button-headline {
+.button-container {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-.button__action {
+
+.trial--headline {
   width: 100%;
   margin-right: 0;
   margin-bottom: 15px;
 }
-.button__more {
+
+.learn-more {
+  height: 48px;
   width: 100%;
   background-color: #ffffff;
   font-size: 18px;
   line-height: 0.72;
   color: #3040c4;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (min-width: 1400px) {
@@ -263,16 +268,17 @@ ul {
     margin-left: auto;
     top: 7px;
   }
-  .button-headline {
+  .button-container {
+    height: 48px;
     flex-direction: row;
     margin-top: 58px;
   }
-  .button__action {
+  .trial--headline {
     width: 160px;
     margin: 0;
     margin-right: 10px;
   }
-  .button__more {
+  .learn-more {
     width: 158px;
   }
 }
@@ -551,8 +557,12 @@ ul {
   text-align: center;
 }
 
-.button__audience {
+.button-container--audience {
   justify-content: center;
+}
+
+.trial--audience {
+  margin-bottom: 12px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -590,9 +600,13 @@ ul {
   .categories-item:last-child {
     margin-right: 0;
   }
-  .button__audience {
+  .button-container--audience {
     margin-top: 34px;
     justify-content: center;
+  }
+  .trial--audience {
+    margin: 0;
+    margin-right: 10px;
   }
 }
 .order {
@@ -631,19 +645,19 @@ ul {
   width: 100%;
   padding: 0 15px;
 }
-.order-form__text {
+.order-description {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.57;
   color: rgba(43, 41, 45, 0.6);
 }
-.order-form__link {
+.order-description__link {
   font-size: 14px;
   line-height: 1.57;
   text-decoration: underline;
   color: #3142c6;
 }
-.order__button {
+.order .trial--order {
   margin-top: 12px;
   min-width: 100%;
 }
@@ -701,7 +715,7 @@ ul {
     height: 48px;
     width: 385px;
   }
-  .order__button {
+  .order .trial--order {
     margin: 0;
     min-width: 160px;
   }

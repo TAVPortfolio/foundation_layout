@@ -9,18 +9,17 @@
   margin: auto;
   display: flex;
   padding-left: 15px;
-  &-menu {
-    &__button {
-      margin-left: auto;
-      width: 58px;
-      height: 100%;
-      border-left: 1px solid rgba(0, 0, 0, 0.15);
-      &-icon {
-        display: inline-block;
-        width: 18px;
-        height: 13px;
-        background-image: url(../img/icon-hamburger.png);
-      }
+
+  .hamburger {
+    margin-left: auto;
+    width: 58px;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    &-icon {
+      display: inline-block;
+      width: 18px;
+      height: 13px;
+      background-image: url(../img/icon-hamburger.png);
     }
   }
 }
@@ -49,6 +48,12 @@
   display: none;
 }
 
+.trial {
+  &--header {
+    display: none;
+  }
+}
+
 // desktop version
 @include for-desktop {
   .top-section {
@@ -60,10 +65,9 @@
     max-width: 1140px;
     height: 62px;
     padding: 0;
-    &-menu {
-      &__button {
-        display: none;
-      }
+
+    .hamburger {
+      display: none;
     }
 
     .logo {
@@ -107,6 +111,11 @@
         margin-left: 11px;
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
       }
+    }
+  }
+  .trial {
+    &--header {
+      display: block;
     }
   }
 }

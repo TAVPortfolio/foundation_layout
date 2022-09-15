@@ -54,7 +54,7 @@ ul {
   padding: 0;
 }
 
-.button {
+button {
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -63,33 +63,21 @@ ul {
   cursor: pointer;
   border: none;
   outline: none;
-  height: 48px;
   font-weight: 700;
-  &__trial {
-    border-radius: 2px;
-    background-color: $secondary-color;
-    min-width: 160px;
-    color: white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    &--header {
-      display: none;
-    }
-  }
+}
+
+.trial {
+  height: 48px;
+  border-radius: 2px;
+  background-color: $secondary-color;
+  min-width: 160px;
+  color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 @mixin for-desktop {
   @media screen and (min-width: $lg) {
     @content;
-  }
-}
-
-@include for-desktop {
-  .button {
-    &__trial {
-      &--header {
-        display: block;
-      }
-    }
   }
 }
