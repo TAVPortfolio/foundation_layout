@@ -11,9 +11,3 @@ $order-section-color: $about-section-color;
 
 //breakpoint
 $lg: 1400px;
-
-@mixin for-desktop {
-  @media screen and (min-width: $lg) {
-    @content;
-  }
-}
