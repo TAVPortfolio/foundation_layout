@@ -646,6 +646,8 @@ ul {
 
 @media screen and (min-width: 1400px) {
   .order {
+    padding: 0;
+    padding: 73px 0 72px;
     display: flex;
     justify-content: center;
   }
