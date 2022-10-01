@@ -6,6 +6,8 @@
 
 ---
 
+**[Site link](https://tavportfolio.github.io/foundation_layout/)**
+
 Simple layout in the process of studying the Front-end course in **Gromcode University**. Layout supports mobile **_(up-to-400)_** and desktop **_(up-to-1400)_** versions.
 
 ## **The tech stack is:**
